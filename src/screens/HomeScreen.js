@@ -1,4 +1,10 @@
-import { View, Text } from "react-native";
+import {
+  View,
+  Text,
+  FlatList,
+  Image,
+  SafeAreaView,
+} from "react-native";
 import React from "react";
 
 export function HomeScreen() {
@@ -68,8 +74,58 @@ export function HomeScreen() {
   };
 
   return (
-    <View>
-      <Text>HomeScreen</Text>
-    </View>
+    <SafeAreaView>
+      <Text
+        style={{
+          fontWeight: "bold",
+          fontSize: 20,
+          margin: 10,
+        }}
+      >
+        New Woof Posts
+      </Text>
+      <FlatList
+        data={woofPostsData.posts}
+        renderItem={({ item, index }) => (
+          <View style={{ flexDirection: "row", margin: 12 }}>
+            <Image
+              style={{
+                width: 40,
+                height: 80,
+                borderRadius: 12,
+                flex: 1,
+                marginRight: 10,
+              }}
+              source={{ uri: item.image }}
+            />
+            <View style={{ flex: 2, width: 195 }}>
+              <Text
+                style={{
+                  fontWeight: "bold",
+                  fontSize: 12,
+                  marginBottom: 2,
+                  color: "#280D5F",
+                  textTransform: "uppercase",
+                  fontFamily: "Sofia Pro",
+                }}
+              >
+                {item.title}
+              </Text>
+              <Text
+                numberOfLines={2}
+                ellipsizeMode="tail"
+                style={{
+                  fontSize: 11,
+                  color: "#280D5F",
+                  fontFamily: "Sofia Pro",
+                }}
+              >
+                {item.description}
+              </Text>
+            </View>
+          </View>
+        )}
+      />
+    </SafeAreaView>
   );
 }
