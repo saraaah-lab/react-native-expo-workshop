@@ -1,10 +1,4 @@
-import {
-  View,
-  Text,
-  FlatList,
-  Image,
-  SafeAreaView,
-} from "react-native";
+import { View, Text, FlatList, Image, SafeAreaView } from "react-native";
 import React from "react";
 
 export function HomeScreen() {
@@ -106,7 +100,6 @@ export function HomeScreen() {
                   marginBottom: 2,
                   color: "#280D5F",
                   textTransform: "uppercase",
-                  fontFamily: "Sofia Pro",
                 }}
               >
                 {item.title}
@@ -117,7 +110,6 @@ export function HomeScreen() {
                 style={{
                   fontSize: 11,
                   color: "#280D5F",
-                  fontFamily: "Sofia Pro",
                 }}
               >
                 {item.description}
