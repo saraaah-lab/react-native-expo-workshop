@@ -9,7 +9,6 @@ export const HomeScreen = () => (
       style={{
         fontWeight: "bold",
         fontSize: 20,
-        fontFamily: "Sofia Pro",
         margin: 10,
       }}
     >
