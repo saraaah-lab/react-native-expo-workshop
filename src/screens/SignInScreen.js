@@ -41,7 +41,7 @@ export function SignInScreen() {
       </View>
       <TouchableOpacity
         style={styles.loginBtn}
-        onPress={() => nav.navigate("HomeScreen")}
+        onPress={() => nav.navigate("TabNavigator")}
       >
         <Text style={styles.loginText}>LOGIN</Text>
       </TouchableOpacity>
