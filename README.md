@@ -1,6 +1,6 @@
 ## 🚀 Description
-- This repository serves as a comprehensive learning platform for exploring React Native, designed to provide hands-on experience through progressive skill-building workshops and practical tasks.
-- Each branch represents a unique learning milestone, enabling developers to incrementally develop their mobile application development skills.
+- This repository serves as a comprehensive learning guide for exploring React Native, designed to provide hands-on experience through progressive tasks.
+- Each branch represents a unique learning milestone, enabling you to incrementally develop your mobile application development skills.
 
 ## ✅ Workshop Tasks
 - [ ] Task 1: Display the given woofPostsData inside a FlatList
