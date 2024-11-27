@@ -17,6 +17,12 @@
 - Implement efficient mobile UI/UX designs
 - Manage application state
 
+## ☞ Key Concepts Covered
+- Core components: FlatList, SafeAreaView
+- Inline style and StyleSheet
+- Props and useState Hook
+- Navigation and Bottom Tab
+
 ## 🎯 Screenshots
 <table>
   <tr>
