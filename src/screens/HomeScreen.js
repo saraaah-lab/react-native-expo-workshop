@@ -86,6 +86,8 @@ export function HomeScreen() {
             image={item.image}
             title={item.title}
             description={item.description}
+            caretaker={item.caretaker}
+            
           />
         )}
       />
